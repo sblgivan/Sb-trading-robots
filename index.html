@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBL Trading Bots</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body class="theme-light">
+  <div id="loading-listener">
+    <div class="loader"></div>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to SBL Trading Bots</h1>
+    <p>Log in to access our services</p>
+
+    <form id="login-form">
+      <input type="tel" id="phone-number" placeholder="Enter your phone number" required>
+      <button type="submit" class="login-button">Log In</button>
+    </form>
+
+    <!-- Terms and Conditions Modal -->
+    <div id="terms-modal" class="modal">
+      <div class="modal-content">
+        <h2>Terms and Conditions</h2>
+        <div class="terms-text">
+          <p>1. Users must be at least 18 years old to subscribe and use the trading bots.</p>
+          <p>2. The company is not responsible for any financial losses incurred while using the bots.</p>
+          <!-- Add the rest of the terms and conditions here -->
+          <p>15. Intellectual property rights for all bot software and related materials remain with the company.</p>
+        </div>
+        <label>
+          <input type="checkbox" id="accept-terms"> I accept the terms and conditions
+        </label>
+        <button id="continue-btn" disabled>Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 SBL Trading Bots. All rights reserved.</p>
+  </footer>
+</body>
+</html>
